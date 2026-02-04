@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_46e149f16db82ed292e5dda757eb85fe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_46e149f16db82ed292e5dda757eb85fe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_46e149f16db82ed292e5dda757eb85fe = L.map(
+                "map_46e149f16db82ed292e5dda757eb85fe",
+                {
+                    center: [7.403777777777767, 3.8997222222222176],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_49d7f8fb2ed0eb963a2959603dd41cc8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_49d7f8fb2ed0eb963a2959603dd41cc8.addTo(map_46e149f16db82ed292e5dda757eb85fe);
+        
+    
+            var marker_ab692f28a2d6ac30a313c64f55c7ea0e = L.marker(
+                [7.42527777777777, 3.92138888888888],
+                {
+}
+            ).addTo(map_46e149f16db82ed292e5dda757eb85fe);
+        
+    
+        var popup_743183c770e00e3ffcef0c3d7da388f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0e22f85091431b9993ec5951d00c513 = $(`<div id="html_e0e22f85091431b9993ec5951d00c513" style="width: 100.0%; height: 100.0%;">SUSCEP: No_Flood<br>Slope: 54.74<br>Rainfall: 85.66</div>`)[0];
+                popup_743183c770e00e3ffcef0c3d7da388f2.setContent(html_e0e22f85091431b9993ec5951d00c513);
+            
+        
+
+        marker_ab692f28a2d6ac30a313c64f55c7ea0e.bindPopup(popup_743183c770e00e3ffcef0c3d7da388f2)
+        ;
+
+        
+    
+    
+            marker_ab692f28a2d6ac30a313c64f55c7ea0e.bindTooltip(
+                `<div>
+                     Klik untuk info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d39862a48583dd1b209da2e6007c6eb3 = L.marker(
+                [7.40666666666666, 3.86305555555555],
+                {
+}
+            ).addTo(map_46e149f16db82ed292e5dda757eb85fe);
+        
+    
+        var popup_c75991a0193c251245af6b37d6ada28a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e2767314034883c637643fe2b539f0c = $(`<div id="html_1e2767314034883c637643fe2b539f0c" style="width: 100.0%; height: 100.0%;">SUSCEP: High<br>Slope: 41.47<br>Rainfall: 66.65</div>`)[0];
+                popup_c75991a0193c251245af6b37d6ada28a.setContent(html_1e2767314034883c637643fe2b539f0c);
+            
+        
+
+        marker_d39862a48583dd1b209da2e6007c6eb3.bindPopup(popup_c75991a0193c251245af6b37d6ada28a)
+        ;
+
+        
+    
+    
+            marker_d39862a48583dd1b209da2e6007c6eb3.bindTooltip(
+                `<div>
+                     Klik untuk info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_edc8d3b83f52a2c01060384180add1fa = L.marker(
+                [7.42972222222221, 3.8925],
+                {
+}
+            ).addTo(map_46e149f16db82ed292e5dda757eb85fe);
+        
+    
+        var popup_c85c5e1362a04069955631db22e37424 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0cc7f304d651e515c1e764a8ee7e4d50 = $(`<div id="html_0cc7f304d651e515c1e764a8ee7e4d50" style="width: 100.0%; height: 100.0%;">SUSCEP: High<br>Slope: 41.47<br>Rainfall: 68.14</div>`)[0];
+                popup_c85c5e1362a04069955631db22e37424.setContent(html_0cc7f304d651e515c1e764a8ee7e4d50);
+            
+        
+
+        marker_edc8d3b83f52a2c01060384180add1fa.bindPopup(popup_c85c5e1362a04069955631db22e37424)
+        ;
+
+        
+    
+    
+            marker_edc8d3b83f52a2c01060384180add1fa.bindTooltip(
+                `<div>
+                     Klik untuk info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1608c0825ad0dda36d42e553d982c11c = L.marker(
+                [7.3611111111111, 3.87861111111111],
+                {
+}
+            ).addTo(map_46e149f16db82ed292e5dda757eb85fe);
+        
+    
+        var popup_d64c759014e1003b982523a9aec88105 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2bf854f2f0888e1126b29be7e2b326c = $(`<div id="html_d2bf854f2f0888e1126b29be7e2b326c" style="width: 100.0%; height: 100.0%;">SUSCEP: Moderate<br>Slope: 68.30<br>Rainfall: 85.87</div>`)[0];
+                popup_d64c759014e1003b982523a9aec88105.setContent(html_d2bf854f2f0888e1126b29be7e2b326c);
+            
+        
+
+        marker_1608c0825ad0dda36d42e553d982c11c.bindPopup(popup_d64c759014e1003b982523a9aec88105)
+        ;
+
+        
+    
+    
+            marker_1608c0825ad0dda36d42e553d982c11c.bindTooltip(
+                `<div>
+                     Klik untuk info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_56219ce63cb44d73b32af9fd51849ae4 = L.marker(
+                [7.3961111111111, 3.94305555555555],
+                {
+}
+            ).addTo(map_46e149f16db82ed292e5dda757eb85fe);
+        
+    
+        var popup_edcc35f7da85c00ff156f18b85de39cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6b66034b7df99c50705b247ce1d0179 = $(`<div id="html_a6b66034b7df99c50705b247ce1d0179" style="width: 100.0%; height: 100.0%;">SUSCEP: High<br>Slope: 14.04<br>Rainfall: 64.71</div>`)[0];
+                popup_edcc35f7da85c00ff156f18b85de39cb.setContent(html_a6b66034b7df99c50705b247ce1d0179);
+            
+        
+
+        marker_56219ce63cb44d73b32af9fd51849ae4.bindPopup(popup_edcc35f7da85c00ff156f18b85de39cb)
+        ;
+
+        
+    
+    
+            marker_56219ce63cb44d73b32af9fd51849ae4.bindTooltip(
+                `<div>
+                     Klik untuk info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
